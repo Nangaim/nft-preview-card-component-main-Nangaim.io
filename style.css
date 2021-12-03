@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-BG);
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card{
+    padding: 1.1em 1.2em;
+    background-color: var(--card-BG);
+    display: flex;
+    max-width: 375px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 0px 19px 11px rgba(0,0,0,0.2);
+}
+
+.content h3{
+    color: var(--white);
+    margin: 1em 0 1em 0;
+    transition: 0.3 ease;
+}
+
+.content h3:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.content p{
+    color: var(--soft-blue);
+    margin-bottom: 1em;
+    overflow-wrap: break-word;
+}
+
+.equilibrium{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+
+.overlay{
+    position: absolute;
+    display: flex;
+    top: 18.5%;
+    justify-content: center;
+    align-items: center;
+    height: 18.4em;
+    width: 18.4em;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s ease;
+    background: var(--cyan);
+}
+
+.icon-view{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3 ease;
+}
+
+.overlay img{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.image-cube:hover .icon-view{
+    opacity: 1;
+}
+
+.image-cube:hover .overlay{
+    opacity: 0.5;
+}
+
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.eth p{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.eth img{
+    margin-right: 0.5em;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.date p{
+    color: var(--soft-blue);
+}
+
+.date img{
+    margin-right: 0.5em;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.profile img{
+    max-width: 10%;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin-right: 1em;
+}
+
+.profile p{
+    color: var(--soft-blue);
+    display: block;
+}
+
+.profile p a{
+    color: white;
+    transition: 0.3s ease;
+}
+.profile p a:hover{
+    color: var(--cyan);
+}
+
+footer{
+    color: white;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        font-size: 14px;
+    }
+
+    .card{
+        padding: 1.1em 1.2em;
+        background-color: var(--card-BG);
+        display: flex;
+        max-width: 275px;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 0px 0px 19px 11px rgba(0,0,0,0.2);
+    }
+
+    .overlay{
+        position: absolute;
+        display: flex;
+        top: 26.1%;
+        justify-content: center;
+        align-items: center;
+        height: 17.3em;
+        width: 17.3em;
+        border-radius: 10px;
+        opacity: 0;
+        transition: 0.3s ease;
+        background: var(--cyan);
+    }
+
+    .icon-view{
+        position: absolute;
+        top: 39.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.3 ease;
+    }
+}

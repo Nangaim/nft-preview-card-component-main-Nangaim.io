@@ -4,7 +4,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Live Site URL: [live site URL](https://nft-preview-card-component-main-Nangaim.io)
+- Live Site URL: [live site URL](https://nangaim.github.io/nft-preview-card-component-main-Nangaim.io/)
 
 ### Built with
 
